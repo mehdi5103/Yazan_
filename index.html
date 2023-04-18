@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Yazan</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary m-1" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark m-1" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary m-1" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+      <div class="row gx-0">
+        <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center">
+            <small class="py-2"
+              ><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon
+              - Tues : 6.00 am - 10.00 pm, Sunday Closed
+            </small>
+          </div>
+        </div>
+        <div class="col-md-6 text-center text-lg-end">
+          <div
+            class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5"
+          >
+            <div class="me-3 pe-3 border-end py-2">
+              <p class="m-0">
+                <i class="fa fa-envelope-open me-2"></i>info@yazan.com
+              </p>
+            </div>
+            <div class="py-2">
+              <p class="m-0">
+                <i class="fa fa-phone-alt me-2"></i>+964 770 762 2076
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0"
+    >
+      <a href="index.html" class="navbar-brand p-0">LoGo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="service.html" class="nav-item nav-link">Service</a>
+          <a href="workWithUs.html" class="nav-item nav-link">Work with Us</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3"
+          >Appointment</a
+        >
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(9, 30, 62, 0.7)">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn bg-white btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <div class="input-group" style="max-width: 600px">
+              <input
+                type="text"
+                class="form-control bg-transparent border-primary p-3"
+                placeholder="Type search keyword"
+              />
+              <button class="btn btn-primary px-4">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+      <div
+        id="header-carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="w-100"
+              src="./img/Yazan Pix/close-up-of-medical-professional-team-meeting-in-c-2022-06-21-17-38-55-utc.jpg"
+              alt="Image"
+            />
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="p-3" style="max-width: 900px">
+                <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                  The Best Hospitality WP Theme Forever!
+                </h5>
+                <h1 class="display-1 text-white mb-md-4 animated zoomIn">
+                  WE CARE FOR YOUR HEALTH
+                </h1>
+                <a
+                  href="appointment.html"
+                  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                  >VIEW OUR SERVICES +</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="w-100"
+              src="img/Yazan Pix/young-handsome-physician-medical-robe-with-stethoscope.jpg"
+              alt="Image"
+            />
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="p-3" style="max-width: 900px">
+                <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                  The Best Hospitality WP Theme Forever!
+                </h5>
+                <h1 class="display-1 text-white mb-md-4 animated zoomIn">
+                  WE CARE FOR YOUR HEALTH
+                </h1>
+                <a
+                  href="appointment.html"
+                  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                  >VIEW OUR SERVICES +</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner mb-5">
+      <div class="container">
+        <div class="row gx-0">
+          <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+            <div
+              class="bg-primary d-flex flex-column p-5"
+              style="height: 300px"
+            >
+              <h3 class="text-white mb-3">Opening Hours</h3>
+              <div class="d-flex justify-content-between text-white mb-3">
+                <h6 class="text-white mb-0">Mon - Fri</h6>
+                <p class="mb-0">8:00am - 9:00pm</p>
+              </div>
+              <div class="d-flex justify-content-between text-white mb-3">
+                <h6 class="text-white mb-0">Saturday</h6>
+                <p class="mb-0">8:00am - 7:00pm</p>
+              </div>
+              <div class="d-flex justify-content-between text-white mb-3">
+                <h6 class="text-white mb-0">Sunday</h6>
+                <p class="mb-0">8:00am - 5:00pm</p>
+              </div>
+              <a class="btn btn-light" href="">Appointment</a>
+            </div>
+          </div>
+          <div class="col-lg-6 wow zoomIn" data-wow-delay="0.6s">
+            <div
+              class="bg-secondary d-flex flex-column p-5"
+              style="height: 300px"
+            >
+              <h3 class="text-white mb-3">Contact us by phone</h3>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                porro?
+              </p>
+              <h2 class="text-white mb-0">+00 262 2626</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Start -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title mb-4">
+              <h5
+                class="position-relative d-inline-block text-primary text-uppercase"
+              >
+                About Us
+              </h5>
+              <h1 class="display-5 mb-0">WELCOME TO MEDICAL</h1>
+            </div>
+            <h4 class="text-body fst-italic mb-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              vero porro earum, adipisci consequatur aperiam aut voluptatum
+              quasi ipsum placeat?
+            </h4>
+            <p class="mb-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium maiores cupiditate odio qui adipisci recusandae
+              aspernatur et rem esse maxime ea voluptatum sapiente, natus iste
+              sint porro amet quaerat voluptate!
+            </p>
+            <div class="row g-3">
+              <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                <h5 class="mb-3">
+                  <i class="fa fa-check-circle text-primary me-3"></i>Award
+                  Winning
+                </h5>
+                <h5 class="mb-3">
+                  <i class="fa fa-check-circle text-primary me-3"></i
+                  >Professional Staff
+                </h5>
+              </div>
+              <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                <h5 class="mb-3">
+                  <i class="fa fa-check-circle text-primary me-3"></i>24/7
+                  Opened
+                </h5>
+                <h5 class="mb-3">
+                  <i class="fa fa-check-circle text-primary me-3"></i>Fair
+                  Prices
+                </h5>
+              </div>
+            </div>
+            <a
+              href="appointment.html"
+              class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
+              data-wow-delay="0.6s"
+              >Make Appointment</a
+            >
+          </div>
+          <div class="col-lg-5" style="min-height: 500px">
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute w-100 h-100 rounded wow zoomIn"
+                data-wow-delay="0.9s"
+                src="img/Yazan Pix/smiling-asian-paramedic-holding-clipboard-and-sitt-2022-11-17-09-22-11-utc.jpg"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Appointment Start -->
+    <div
+      class="container-fluid bg-primary bg-appointment my-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+    >
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-lg-6 py-5">
+            <div class="py-5">
+              <h1 class="display-5 text-white mb-4">
+                Services for Integrated Remote Healthcare & On-Site Clinics
+              </h1>
+              <p class="text-white mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                sint dolor voluptates sapiente animi neque at quas deserunt
+                culpa optio, sequi, facere numquam? Quidem inventore, quas ex
+                unde dignissimos quia qui odio in sunt consequatur dolor
+                nesciunt commodi! Beatae eveniet qui perferendis provident!
+                Quod, velit, sapiente officia accusantium provident, corporis
+                quibusdam minima autem quisquam veniam quas ab quaerat vitae
+                dolores unde ducimus. Magni obcaecati, ea ex nemo deleniti
+                repudiandae exercitationem ad distinctio nobis quas hic
+                voluptatum, alias delectus in nisi cumque enim aliquid?
+                Officiis, molestiae. Reprehenderit animi harum velit doloribus
+                fuga fugit, cum suscipit recusandae nobis? Ex a vero minima.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+              data-wow-delay="0.6s"
+            >
+              <h1 class="text-white mb-4">Make Appointment</h1>
+              <form>
+                <div class="row g-3">
+                  <div class="col-12 col-sm-6">
+                    <select
+                      class="form-select bg-light border-0"
+                      style="height: 55px"
+                    >
+                      <option selected>Select A Service</option>
+                      <option value="1">Service 1</option>
+                      <option value="2">Service 2</option>
+                      <option value="3">Service 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <select
+                      class="form-select bg-light border-0"
+                      style="height: 55px"
+                    >
+                      <option selected>Select Doctor</option>
+                      <option value="1">Doctor 1</option>
+                      <option value="2">Doctor 2</option>
+                      <option value="3">Doctor 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0"
+                      placeholder="Your Name"
+                      style="height: 55px"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="email"
+                      class="form-control bg-light border-0"
+                      placeholder="Your Email"
+                      style="height: 55px"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="date" id="date1" data-target-input="nearest">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 datetimepicker-input"
+                        placeholder="Appointment Date"
+                        data-target="#date1"
+                        data-toggle="datetimepicker"
+                        style="height: 55px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="time" id="time1" data-target-input="nearest">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 datetimepicker-input"
+                        placeholder="Appointment Time"
+                        data-target="#time1"
+                        data-toggle="datetimepicker"
+                        style="height: 55px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-dark w-100 py-3" type="submit">
+                      Make Appointment
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Appointment End -->
+
+    <!-- Pricing Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <div class="section-title mb-4">
+              <h1 class="display-5 mb-0">
+                Your partner in the Oil & Gas Industry
+              </h1>
+            </div>
+            <p class="mb-4">
+              By catering to client needs for on-site and off-site medical care,
+              we have improved and adapted our solutions and services to better
+              serve the oil and gas industry.
+            </p>
+            <p class="mb-4">
+              It is in the best interest of businesses in the oil and gas
+              industry to protect and enhance the health and wellbeing of
+              employees, whether they are employed or contracted. This "best
+              interest" goes beyond corporate responsibility and compliance; it
+              directly affects a business's financial line. Good leadership in
+              the areas of health and human performance adds a great deal of
+              value to both individuals and the business
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div
+              class="owl-carousel price-carousel wow zoomIn"
+              data-wow-delay="0.9s"
+            >
+              <div class="price-item pb-4">
+                <div class="position-relative">
+                  <img
+                    class="img-fluid rounded-top"
+                    src="img/jamie-street-vcn2ndJ5LwE-unsplash.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                    style="z-index: 2"
+                  ></div>
+                </div>
+                <div
+                  class="position-relative text-center bg-light border-bottom border-primary py-5 p-4"
+                >
+                  <h4>Food and water</h4>
+                  <p class="paragraphyoob">
+                    Food and water safety, industrial hygiene management, and
+                    dangers associated with H2S leaks.
+                  </p>
+                </div>
+              </div>
+              <div class="price-item pb-4">
+                <div class="position-relative">
+                  <img
+                    class="img-fluid rounded-top"
+                    src="img/Yazan Pix/tablets.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                    style="z-index: 2"
+                  ></div>
+                </div>
+                <div
+                  class="position-relative text-center bg-light border-bottom border-primary py-5 p-4"
+                >
+                  <h4>Health risk awarenes</h4>
+                  <p class="paragraphyoob">
+                    Health risk awareness, health surveillance, medical case
+                    management, and training.
+                  </p>
+                </div>
+              </div>
+              <div class="price-item pb-4">
+                <div class="position-relative">
+                  <img
+                    class="img-fluid rounded-top"
+                    src="img/Yazan Pix/closeup-woman-getting-her-temperature-measured-with-infrared-thermometer-due-coronavirus-pandemic.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                    style="z-index: 2"
+                  ></div>
+                </div>
+                <div
+                  class="position-relative text-center bg-light border-bottom border-primary py-5 p-4"
+                >
+                  <h4>Plans for medical</h4>
+                  <p class="paragraphyoob">
+                    Plans for medical evacuation to a suitable medical center
+                    for handling big incidents.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing End -->
+    <div class="container-fluid py-5 boxDescriptionAndTitle">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-12 wow slideInUp" data-wow-delay="0.1s">
+            <h6 class="text-center m-auto">OUR FEATURES</h6>
+          </div>
+          <div class="col-lg-12 wow slideInUp" data-wow-delay="0.1s">
+            <div class="row">
+              <div class="col-lg-4 d-flex">
+                <div class="box-icon">
+                  <svg
+                    fill="#fff"
+                    height="50px"
+                    width="50px"
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 372 372"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g id="Layer_5_15_">
+                        <g>
+                          <g>
+                            <circle cx="120.862" cy="186" r="28.956" />
+                            <path
+                              d="M120.862,221.955c-19.826,0-35.956-16.129-35.956-35.955s16.13-35.956,35.956-35.956s35.955,16.13,35.955,35.956
+                        S140.688,221.955,120.862,221.955z M120.862,164.044c-12.107,0-21.956,9.85-21.956,21.956s9.849,21.955,21.956,21.955
+                        c12.106,0,21.955-9.849,21.955-21.955S132.969,164.044,120.862,164.044z"
+                            />
+                          </g>
+                          <path
+                            d="M337,30H35C15.701,30,0,45.701,0,65v242c0,19.299,15.701,35,35,35h302c19.299,0,35-15.701,35-35V65
+                    C372,45.701,356.299,30,337,30z M120.862,266.728c-44.514,0-80.729-36.214-80.729-80.728s36.215-80.729,80.729-80.729
+                    c44.513,0,80.729,36.215,80.729,80.729S165.375,266.728,120.862,266.728z M263.867,162.313c0,6.065-4.935,11-11,11
+                    c0,0-3.334,0.258-3.334,2.758c0,15.103,0,60.409,0,60.409c0,3.866-3.134,7-7,7s-7-3.134-7-7c0,0,0-45.307,0-60.409
+                    c0-2.667-3.333-2.758-3.333-2.758c-6.065,0-11-4.935-11-11v-13.666c0-6.065,4.935-11,11-11c0,0,3.333-0.159,3.333-3.493
+                    c0-3.418,0-13.674,0-13.674c0-3.866,3.134-7,7-7s7,3.134,7,7c0,0,0,10.256,0,13.674c0,2.917,3.334,3.493,3.334,3.493
+                    c6.065,0,11,4.935,11,11V162.313z M331.867,196.146c0,6.065-4.935,11-11,11c0,0-3.334,0.091-3.334,2.257
+                    c0,6.77,0,27.076,0,27.076c0,3.866-3.134,7-7,7s-7-3.134-7-7c0,0,0-20.307,0-27.076c0-2.583-3.333-2.257-3.333-2.257
+                    c-6.065,0-11-4.935-11-11v-13.667c0-6.065,4.935-11,11-11c0,0,3.333-0.097,3.333-3.284c0-11.929,0-47.716,0-47.716
+                    c0-3.866,3.134-7,7-7s7,3.134,7,7c0,0,0,35.787,0,47.716c0,3.438,3.334,3.284,3.334,3.284c6.065,0,11,4.935,11,11V196.146z"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="titleBox">
+                  <h6 class="mx-4">Medical Device & Equipment Supply</h6>
+                  <p>
+                    Medical supplies and equipment are a significant asset in
+                    the delivery of healthcare and must be managed effectively.
+                    Orders for POM drugs and OTC goods can be processed by
+                    Yazan. Also, we provide and keep up a variety of medical
+                    tools, first aid kits, and on-site medical investigation
+                    kits.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 d-flex">
+                <div class="box-icon">
+                  <svg
+                    fill="#fff"
+                    height="50px"
+                    width="50px"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 511.999 511.999"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M165.784,333.772c-2.328-3.836-7.324-5.057-11.16-2.729c-20.556,12.479-32.829,34.269-32.829,58.286v64.441
+                           c0,4.487,3.637,8.124,8.124,8.124c4.486,0,8.124-3.637,8.124-8.124V389.33c0-18.292,9.35-34.889,25.012-44.398
+                           C166.891,342.603,168.111,337.607,165.784,333.772z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M293.929,483.446H138.043v-2.596c0-4.486-3.637-8.124-8.124-8.124c-4.486,0-8.124,3.637-8.124,8.124v10.72
+                           c0,4.486,3.637,8.124,8.124,8.124h164.01c4.486,0,8.124-3.637,8.124-8.124S298.415,483.446,293.929,483.446z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M295.422,359.983c-4.169-1.657-8.892,0.381-10.549,4.55c-6.044,15.212-20.525,25.042-36.893,25.042
+                           c-16.36,0-30.838-9.83-36.882-25.042c-1.656-4.17-6.379-6.208-10.549-4.55c-4.17,1.657-6.207,6.38-4.55,10.549
+                           c8.518,21.438,28.922,35.291,51.981,35.291c23.067,0,43.475-13.853,51.992-35.291C301.629,366.363,299.591,361.64,295.422,359.983
+                           z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M127.205,291.83c-1.675-4.163-6.407-6.178-10.568-4.504c-6.155,2.477-12.571,4.068-19.153,4.793v-30.851
+                           c4.332,0.479,8.603,1.338,12.766,2.577c4.305,1.281,8.825-1.17,10.104-5.469c1.279-4.3-1.169-8.823-5.469-10.104
+                           c-8.253-2.456-16.84-3.701-25.524-3.701C40.087,244.571,0,284.658,0,333.933s40.087,89.361,89.361,89.361
+                           c6.059,0,12.116-0.611,18.002-1.815c4.396-0.9,7.229-5.193,6.329-9.588c-0.9-4.396-5.192-7.227-9.588-6.329
+                           c-2.18,0.446-4.392,0.779-6.619,1.025V375.74c4.269,0.471,8.479,1.312,12.583,2.521c4.302,1.272,8.82-1.193,10.089-5.496
+                           c1.268-4.303-1.194-8.82-5.497-10.089c-5.595-1.649-11.346-2.728-17.176-3.255v-50.965c8.672-0.779,17.125-2.801,25.217-6.057
+                           C126.863,300.724,128.879,295.991,127.205,291.83z M81.236,406.584c-14.009-1.557-26.828-7.088-37.317-15.437
+                           c10.765-8.589,23.609-13.895,37.317-15.399V406.584z M81.236,359.418c-18.065,1.616-34.986,8.597-48.904,20.192
+                           c-10.053-12.523-16.086-28.406-16.086-45.678c0-17.269,6.031-33.148,16.081-45.672c13.926,11.593,30.849,18.573,48.909,20.189
+                           V359.418z M81.236,292.122c-13.705-1.505-26.552-6.81-37.324-15.398c10.49-8.351,23.312-13.885,37.324-15.442V292.122z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M503.875,443.884h-23.303v-31.439c0-4.486-3.637-8.124-8.124-8.124h-44.153c-4.486,0-8.124,3.637-8.124,8.124v31.439
+                           H373.3v-31.439c0-4.486-3.637-8.124-8.124-8.124h-44.154c-4.486,0-8.124,3.637-8.124,8.124v31.439h-23.302
+                           c-4.487,0-8.124,3.637-8.124,8.124c0,4.486,3.637,8.124,8.124,8.124h23.302v31.439c0,4.486,3.637,8.124,8.124,8.124h44.154
+                           c4.486,0,8.124-3.637,8.124-8.124v-31.439h46.872v31.439c0,4.486,3.637,8.124,8.124,8.124h44.153c4.487,0,8.124-3.637,8.124-8.124
+                           v-31.439h23.303c4.486,0,8.124-3.637,8.124-8.124C511.999,447.521,508.362,443.884,503.875,443.884z M357.052,483.446h-27.907
+                           v-62.878h27.907V483.446z M464.324,483.446h-27.906v-62.878h27.906V483.446z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M199.762,215.061c-4.486,0-8.124,3.637-8.124,8.124v12.994c0,4.486,3.637,8.124,8.124,8.124s8.124-3.637,8.124-8.124
+                           v-12.994C207.885,218.698,204.248,215.061,199.762,215.061z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M320.516,197.402c-13.406-13.41-35.226-13.41-48.634,0c-3.173,3.173-3.173,8.317,0,11.488
+                           c3.173,3.173,8.317,3.173,11.488,0c7.074-7.073,18.584-7.073,25.658,0c1.586,1.586,3.665,2.38,5.744,2.38
+                           c2.079,0,4.158-0.793,5.744-2.38C323.689,205.717,323.689,200.573,320.516,197.402z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M224.079,197.403c-13.407-13.409-35.226-13.41-48.635,0c-3.173,3.173-3.173,8.317,0,11.488
+                           c3.173,3.173,8.317,3.173,11.488,0c7.075-7.073,18.584-7.074,25.659,0c1.586,1.586,3.665,2.38,5.744,2.38
+                           c2.079,0,4.158-0.793,5.744-2.38C227.251,205.718,227.251,200.574,224.079,197.403z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M296.2,215.061c-4.486,0-8.124,3.637-8.124,8.124v12.994c0,4.486,3.637,8.124,8.124,8.124
+                           c4.487,0,8.124-3.637,8.124-8.124v-12.994C304.324,218.698,300.687,215.061,296.2,215.061z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M285.07,279.338c-3.173-3.173-8.317-3.173-11.489,0c-14.116,14.116-37.084,14.117-51.202,0
+                           c-3.173-3.174-8.317-3.173-11.488,0c-3.173,3.173-3.173,8.317,0,11.488c10.225,10.225,23.657,15.339,37.09,15.339
+                           s26.864-5.113,37.09-15.339C288.243,287.653,288.243,282.509,285.07,279.338z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M256.473,245.546h-0.369v-16.789c0-4.486-3.637-8.124-8.124-8.124c-4.487,0-8.124,3.637-8.124,8.124v16.789h-0.369
+                           c-4.487,0-8.124,3.637-8.124,8.124s3.637,8.124,8.124,8.124h16.986c4.487,0,8.124-3.637,8.124-8.124
+                           S260.959,245.546,256.473,245.546z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M472.066,304.973c-1.043-3.417-4.197-5.753-7.77-5.753h-10.745c-16.926,0-30.695-13.769-30.695-30.695V99.932
+                           c0-48.318-39.306-87.627-87.619-87.627c-27.829,0-51.969,17.519-60.812,43.324c-8.594-2.02-17.461-3.059-26.444-3.059
+                           c-41.496,0-79.327,21.991-99.918,57.711h-5.711c-3.849,0-7.168,2.7-7.953,6.468l-9.549,45.851
+                           c-0.498,2.394,0.107,4.885,1.65,6.782c1.303,1.603,3.16,2.629,5.179,2.91l-0.363,3.758c-16.711,1.816-29.762,16.007-29.762,33.193
+                           c0,15.031,9.861,27.763,23.595,31.943c-1.355,30.046,12.561,59.222,37.038,77.007l44.463,32.299
+                           c12.362,8.983,26.845,13.474,41.332,13.472c14.484-0.001,28.971-4.492,41.33-13.472l44.465-32.3
+                           c24.476-17.784,38.392-46.962,37.037-77.009c13.735-4.182,23.595-16.911,23.595-31.94c0-17.182-13.05-31.371-29.762-33.191
+                           l-0.364-3.76c2.018-0.283,3.874-1.308,5.179-2.91c1.542-1.897,2.149-4.388,1.65-6.782l-9.549-45.851
+                           c-0.784-3.767-4.105-6.468-7.953-6.468h-5.702c-5.97-10.344-13.484-19.664-22.39-27.752
+                           c-10.524-9.563-22.587-16.996-35.571-22.067c6.736-19.028,24.657-31.909,45.291-31.909c39.355,0,71.372,32.021,71.372,71.379
+                           v168.597c0,19.676,12.168,36.562,29.374,43.531c-19.213,6.991-47.63,12.427-75.959-0.038c-4.107-1.808-8.9,0.056-10.707,4.164
+                           c-1.807,4.107,0.057,8.9,4.164,10.707c14.739,6.485,29.328,8.914,42.929,8.913c39.547-0.003,70.689-20.554,72.424-21.722
+                           C471.796,312.088,473.109,308.391,472.066,304.973z M126.654,224.259c-5.296-2.921-8.854-8.549-8.854-15.017
+                           c0-7.617,4.997-14.082,11.882-16.31L126.654,224.259z M378.161,209.243c0,6.465-3.558,12.091-8.854,15.014l-3.029-31.322
+                           C373.164,195.164,378.161,201.628,378.161,209.243z M239.857,69.16v41.121h-72.515C184.235,86.591,210.651,71.531,239.857,69.16z
+                            M354.329,238.194c2.508,25.923-9.027,51.54-30.102,66.853l-44.465,32.3c-19.01,13.814-44.554,13.813-63.564,0l-44.463-32.299
+                           c-21.076-15.314-32.611-40.931-30.104-66.854l6.362-65.814h199.974L354.329,238.194z M347.003,126.528l6.165,29.604H142.792
+                           l6.165-29.604H347.003z M314.593,94.556c5.245,4.763,9.916,10.028,13.994,15.724h-72.483V69.168
+                           C277.822,70.945,298.342,79.789,314.593,94.556z"
+                        />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M341.333,331.044c-3.834-2.328-8.831-1.107-11.16,2.729c-2.328,3.836-1.107,8.831,2.729,11.16
+                           c15.661,9.508,25.012,26.105,25.012,44.398c0,4.486,3.637,8.124,8.124,8.124c4.487,0,8.124-3.637,8.124-8.124
+                           C374.162,365.313,361.89,343.523,341.333,331.044z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="titleBox">
+                  <h6 class="mx-4">Fitness to Work Assessments</h6>
+                  <p>
+                    he goal of the pre-employment medical examination is to
+                    place and keep people in work environments that are
+                    compatible with their physical and mental capabilities.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 d-flex">
+                <div class="box-icon">
+                  <svg
+                    width="50px"
+                    height="50px"
+                    viewBox="0 0 512 512"
+                    id="Layer_1"
+                    version="1.1"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#fff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <g>
+                            <g>
+                              <path
+                                class="st1"
+                                d="M289.7,258.1h-45.8v43.4c0,3.9-3.1,7-7,7c-3.9,0-7-3.1-7-7v-43.4H74.1v97.6c0,32.7,14.5,61.9,37.5,81.7 c18.9,16.3,43.5,26.1,70.3,26.1c28.9,0,55.1-11.4,74.5-29.9c20.5-19.6,33.3-47.3,33.3-78V258.1z M241.9,351c-1.3,1.3-3.1,2-5,2 c-0.5,0-0.9,0-1.4-0.1c-0.4-0.1-0.9-0.2-1.3-0.4c-0.4-0.2-0.8-0.4-1.2-0.7c-0.4-0.3-0.7-0.5-1.1-0.9c-1.3-1.3-2-3.1-2-5 c0-1.8,0.8-3.6,2-4.9c0.3-0.3,0.7-0.6,1.1-0.9c0.4-0.3,0.8-0.5,1.2-0.6c0.4-0.2,0.9-0.3,1.3-0.4c2.3-0.5,4.7,0.3,6.3,1.9 c1.3,1.3,2,3.1,2,4.9C243.9,347.9,243.2,349.7,241.9,351z"
+                              />
+                            </g>
+                          </g>
+                          <path
+                            class="st0"
+                            d="M330.6,248.9c-9.3,0-18.3,1.2-26.9,3.4v103.4c0,33.1-13,63.9-36.6,87c17.8,13.1,39.7,20.8,63.5,20.8 c27.1,0,51.9-10.1,70.8-26.7c-0.2-0.1-0.4-0.3-0.5-0.5l-70.5-70.5c-2.7-2.7-2.7-7.2,0-9.9c2.7-2.7,7.2-2.7,9.9,0l70.5,70.5 c0.2,0.2,0.3,0.3,0.5,0.5c16.6-18.9,26.7-43.7,26.7-70.8C437.9,296.9,389.9,248.9,330.6,248.9z M322.4,348c-1.3,1.3-3.1,2.1-5,2.1 c-0.5,0-0.9-0.1-1.4-0.1c-0.5-0.1-0.9-0.2-1.3-0.4c-0.4-0.2-0.8-0.4-1.2-0.6c-0.4-0.3-0.7-0.5-1.1-0.9c-1.3-1.3-2-3.1-2-4.9 c0-0.5,0-0.9,0.1-1.4c0.1-0.5,0.2-0.9,0.4-1.3c0.2-0.4,0.4-0.8,0.6-1.2c0.3-0.4,0.5-0.7,0.9-1.1c1.6-1.6,4.1-2.4,6.3-1.9 c0.5,0.1,0.9,0.2,1.3,0.4c0.4,0.2,0.8,0.4,1.2,0.7s0.7,0.5,1.1,0.9c0.3,0.3,0.6,0.7,0.9,1.1c0.3,0.4,0.5,0.8,0.7,1.2 c0.2,0.4,0.3,0.9,0.4,1.3c0.1,0.4,0.1,0.9,0.1,1.4C324.4,344.8,323.7,346.7,322.4,348z"
+                          />
+                          <path
+                            class="st0"
+                            d="M289.7,156.3c0-29.8-12.1-56.7-31.6-76.2s-46.5-31.6-76.2-31.6c-20.1,0-38.9,5.5-55,15.1 c-31.6,18.8-52.8,53.3-52.8,92.8v87.9h215.6V156.3z M149.4,101.4c-19.3,11.5-31.3,32.5-31.3,54.9c0,3.9-3.1,7-7,7 c-3.9,0-7-3.1-7-7c0-27.3,14.6-53,38.1-67c3.3-2,7.6-0.9,9.6,2.5C153.8,95.1,152.7,99.4,149.4,101.4z"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="titleBox">
+                  <h6 class="mx-4">
+                    Services for Integrated Remote Healthcare & On-Site Clinics
+                  </h6>
+                  <p>
+                    Remote workers are the focus of health initiatives involving
+                    prevention, diagnosis, and treatment. When it comes to
+                    hiring for the remote worksite, we only take into
+                    consideration qualified medical professionals with a strong
+                    commitment to patient-centered care and a focus on emergency
+                    response.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-lg-4 d-flex">
+                <div class="box-icon">
+                  <svg
+                    width="50px"
+                    height="50px"
+                    viewBox="0 0 24 24"
+                    fill="#fff"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 13.5H15.5M8.5 13.5H10M12 10V17M20 13V9C20 7.89543 19.1046 7 18 7H6C4.89543 7 4 7.89543 4 9V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V17M15 7V5C15 3.89543 14.1046 3 13 3H11C9.89543 3 9 3.89543 9 5V7"
+                      stroke="#000000"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="titleBox">
+                  <h6 class="mx-4">Training & Medical Staffing</h6>
+                  <p>
+                    When needed, Yazan offers its clients access to doctors,
+                    nurses, ambulance drivers, and other medical personnel. The
+                    employees are fully qualified in their respective
+                    disciplines. For doctors, medical residents, medical
+                    students, and other healthcare professionals, Yazan offers a
+                    variety of certificate programs.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 d-flex">
+                <div class="box-icon">
+                  <svg
+                    fill="#fff"
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://oww.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="50px"
+                    height="50px"
+                    viewBox="0 0 96.623 96.622"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M31.642,22.691c5.311,1.138,10.541-2.246,11.68-7.559c0.254-1.183,0.271-2.359,0.105-3.49L48.828,0l-7.489,1.934
+                           l-9.606-1.933l-1.482,3.866l0.002,0.001c-3.033,1.139-5.44,3.743-6.17,7.143C22.946,16.324,26.33,21.553,31.642,22.691z"
+                        />
+                        <circle cx="68.822" cy="25.679" r="9.281" />
+                        <path
+                          d="M93.753,91.378l-0.355-1.323l-7.661,3.541c0.624,2.184,2.882,3.475,5.079,2.883
+                           C93.037,95.881,94.351,93.598,93.753,91.378z"
+                        />
+                        <polygon
+                          points="92.696,87.441 84.388,88.602 85.307,92.012 92.97,88.467 		"
+                        />
+                        <path
+                          d="M91.451,82.814l-7.293,3.104c0.012-0.021,0.021-0.043,0.031-0.064c0.016-0.209,0.023-0.42,0.043-0.627
+                           c0.034-0.406,0.098-0.801,0.186-1.188l6.607-2.812l-4.27-16.293c-0.147-0.559-0.414-1.058-0.75-1.494
+                           c0.045,0,0.09,0.002,0.137,0.002c1.988,0,3.604-1.612,3.604-3.603c0-1.989-1.613-3.603-3.604-3.603
+                           c-5.432,0-8.93-2.24-10.742-13.689c-0.042-0.26-0.111-0.508-0.205-0.744c-0.447-3.334-3.511-5.569-6.376-6.271
+                           c0,0-0.976-0.293-2.015-0.27c-0.996,0.023-2.105,0.253-2.105,0.253l-0.027,0.006c-3.121,0.765-6.447,3.309-6.447,7.126
+                           l0.001,18.57l-2.724-19.313c-0.215-1.614-1.705-2.747-3.312-2.532c-1.615,0.214-2.749,1.697-2.531,3.312l0.153,1.121
+                           c-11.314-1.577-11.554-3.209-12.983-13.285c-0.021-0.156-0.07-0.301-0.11-0.45c-0.295-3.052-2.695-5.567-5.206-6.784
+                           c0,0-0.949-0.52-2.031-0.727c-1.036-0.198-2.235-0.205-2.235-0.205l-0.029-0.002c-3.406,0.099-7.416,1.998-8.264,5.954
+                           L2.724,69.779h9.701c-0.245,1.85-0.467,3.205-0.637,3.757c-0.428,1.382-3.744,6.526-7.097,11.011
+                           c-1.649,2.208-1.698,5.086,0.509,6.737c2.36,1.464,4.757,0.553,5.737-0.759c1.718-2.295,7.418-10.096,8.639-14.037
+                           c0.383-1.236,0.784-3.752,1.161-6.711h6.997c0.73,1.914,1.238,3.365,1.367,3.992c0.288,1.418-0.146,7.523-0.929,13.066
+                           c-0.388,2.73,0.972,5.891,4.242,5.643c0.238-0.018-0.527,0.051-0.295,0.051c2.446,0,4.584-1.801,4.938-4.293
+                           c0.402-2.84,1.65-12.42,0.824-16.461c-0.103-0.514-0.298-1.196-0.556-1.996h4.013c0,0-8.04-17.162-7.844-23.169l0.283-1.327
+                           c2.74,3.199,7.266,5.035,15.334,6.137c0.176,0.023,0.352,0.035,0.521,0.035c0.422,0,0.83-0.079,1.214-0.209l2.415,17.361
+                           c-1.596,2.664-2.516,5.777-2.516,9.102c0,9.799,7.971,17.77,17.77,17.77c6.475,0,12.15-3.48,15.257-8.67l0.001,0.006
+                           c0.023-0.068,0.055-0.135,0.079-0.203l0.108,0.402l8.306-1.16L91.451,82.814z M73.197,57.889c1.854,1.644,3.939,3.07,6.297,4.239
+                           L73.197,62.1V57.889z M68.517,89.417c-6.455,0-11.709-5.252-11.709-11.709c0-1.468,0.283-2.868,0.779-4.163
+                           c0.209,0.031,0.42,0.053,0.637,0.053h21.242c0.484,1.281,0.762,2.664,0.762,4.11C80.228,84.165,74.974,89.417,68.517,89.417z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="titleBox">
+                  <h6 class="mx-4">
+                    Medevac, Patient Transport and Evacuations
+                  </h6>
+                  <p>
+                    We guarantee that you will obtain the most cost-effective
+                    evacuation options without sacrificing quality thanks to our
+                    years of expertise, competence, and knowledge in medevac and
+                    mass evacuations. Yazan is an expert in the medical,
+                    logistical, and regulatory procedures required to relocate
+                    patients in a secure, effective, and economical way.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 d-flex">
+                <div class="box-icon">
+                  <svg
+                    fill="#fff"
+                    width="50px"
+                    height="50px"
+                    viewBox="0 0 50 50"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      d="M25.90625 -0.03125C25.863281 -0.0234375 25.820313 -0.0117188 25.78125 0C25.316406 0.105469 24.988281 0.523438 25 1L25 3C24.996094 3.359375 25.183594 3.695313 25.496094 3.878906C25.808594 4.058594 26.191406 4.058594 26.503906 3.878906C26.816406 3.695313 27.003906 3.359375 27 3L27 1C27.011719 0.710938 26.894531 0.433594 26.6875 0.238281C26.476563 0.0390625 26.191406 -0.0585938 25.90625 -0.03125 Z M 18.71875 2.90625C18.34375 2.972656 18.042969 3.246094 17.9375 3.609375C17.832031 3.976563 17.941406 4.367188 18.21875 4.625L19.625 6.0625C20.023438 6.460938 20.664063 6.460938 21.0625 6.0625C21.460938 5.664063 21.460938 5.023438 21.0625 4.625L19.625 3.21875C19.4375 3.019531 19.179688 2.910156 18.90625 2.90625C18.875 2.90625 18.84375 2.90625 18.8125 2.90625C18.78125 2.90625 18.75 2.90625 18.71875 2.90625 Z M 32.96875 2.90625C32.742188 2.9375 32.53125 3.050781 32.375 3.21875L30.9375 4.625C30.539063 5.023438 30.539063 5.664063 30.9375 6.0625C31.335938 6.460938 31.976563 6.460938 32.375 6.0625L33.78125 4.625C34.078125 4.339844 34.167969 3.898438 34.007813 3.519531C33.851563 3.140625 33.472656 2.898438 33.0625 2.90625C33.03125 2.90625 33 2.90625 32.96875 2.90625 Z M 26 6C23.800781 6 22 7.800781 22 10L22 13L2.78125 13C1.269531 13 0 14.234375 0 15.75L0 40.25C0 41.765625 1.269531 43 2.78125 43L7 43C7 46.300781 9.699219 49 13 49C16.300781 49 19 46.300781 19 43L33 43C33 46.300781 35.699219 49 39 49C42.300781 49 45 46.300781 45 43L47.21875 43C48.730469 43 50 41.765625 50 40.25L50 33.25C50 32.148438 49.59375 31.15625 49.21875 30.40625C48.859375 29.691406 48.535156 29.234375 48.5 29.1875L48.46875 29.125L39.46875 15.21875C39.441406 15.175781 39.410156 15.132813 39.375 15.09375C38.984375 14.628906 38.628906 14.144531 38.09375 13.71875C37.558594 13.292969 36.820313 13 35.96875 13L30 13L30 10C30 7.800781 28.195313 6 26 6 Z M 26 8C27.117188 8 28 8.882813 28 10L28 13L24 13L24 10C24 8.882813 24.882813 8 26 8 Z M 15.71875 9C15.167969 9.078125 14.78125 9.589844 14.859375 10.140625C14.9375 10.691406 15.449219 11.078125 16 11L18 11C18.359375 11.003906 18.695313 10.816406 18.878906 10.503906C19.058594 10.191406 19.058594 9.808594 18.878906 9.496094C18.695313 9.183594 18.359375 8.996094 18 9L16 9C15.96875 9 15.9375 9 15.90625 9C15.875 9 15.84375 9 15.8125 9C15.78125 9 15.75 9 15.71875 9 Z M 33.71875 9C33.167969 9.078125 32.78125 9.589844 32.859375 10.140625C32.9375 10.691406 33.449219 11.078125 34 11L36 11C36.359375 11.003906 36.695313 10.816406 36.878906 10.503906C37.058594 10.191406 37.058594 9.808594 36.878906 9.496094C36.695313 9.183594 36.359375 8.996094 36 9L34 9C33.96875 9 33.9375 9 33.90625 9C33.875 9 33.84375 9 33.8125 9C33.78125 9 33.75 9 33.71875 9 Z M 2.78125 15L35.96875 15C36.417969 15 36.578125 15.101563 36.84375 15.3125C37.109375 15.523438 37.425781 15.90625 37.84375 16.40625L38.21875 17L32 17C31.96875 17 31.9375 17 31.90625 17C31.875 17 31.84375 17 31.8125 17C31.335938 17.089844 30.992188 17.511719 31 18L31 29C31 29.550781 31.449219 30 32 30L46.15625 30C46.308594 30.003906 46.457031 29.96875 46.59375 29.90625L46.8125 30.25C46.820313 30.269531 46.832031 30.292969 46.84375 30.3125C46.84375 30.3125 47.136719 30.710938 47.4375 31.3125C47.738281 31.914063 48 32.691406 48 33.25L48 40.25C48 40.664063 47.65625 41 47.21875 41L44.65625 41C43.832031 38.671875 41.605469 37 39 37C36.394531 37 34.167969 38.671875 33.34375 41L18.65625 41C17.832031 38.671875 15.605469 37 13 37C10.394531 37 8.167969 38.671875 7.34375 41L2.78125 41C2.34375 41 2 40.664063 2 40.25L2 15.75C2 15.335938 2.34375 15 2.78125 15 Z M 33 19L39.53125 19L45.34375 28L33 28 Z M 14 21L14 25L10 25L10 27L14 27L14 31L16 31L16 27L20 27L20 25L16 25L16 21 Z M 13 39C15.222656 39 17 40.777344 17 43C17 45.222656 15.222656 47 13 47C10.777344 47 9 45.222656 9 43C9 40.777344 10.777344 39 13 39 Z M 39 39C41.222656 39 43 40.777344 43 43C43 45.222656 41.222656 47 39 47C36.777344 47 35 45.222656 35 43C35 40.777344 36.777344 39 39 39Z"
+                    />
+                  </svg>
+                </div>
+                <div class="titleBox">
+                  <h6 class="mx-4">24/7 Emergency Ambulance</h6>
+                  <p>
+                    To give patients, the finest care possible, Yazan has a
+                    fleet of modern emergency ambulances that are outfitted to
+                    the highest standards. Ambulances that are fully outfitted,
+                    licensed, and always have a professional ambulance driver
+                    on-site.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
+            <div class="section-title bg-light rounded h-100 p-5">
+              <h5
+                class="position-relative d-inline-block text-primary text-uppercase"
+              >
+                Our Doctors
+              </h5>
+              <h1 class="display-6 mb-4">
+                Meet Our Certified & Experienced Doctors
+              </h1>
+              <a href="appointment.html" class="btn btn-primary py-3 px-5"
+                >Appointment</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+              <div class="position-relative rounded-top" style="z-index: 1">
+                <img
+                  class="img-fluid rounded-top w-100"
+                  src="img/Yazan Pix/portrait-male-scientist-worker-medicine-factory-re-2022-11-16-06-05-52-utc.jpg"
+                  alt=""
+                />
+                <div
+                  class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex"
+                >
+                  <a class="btn btn-primary btn-square m-1" href="#"
+                    ><i class="fab fa-twitter fw-normal"></i
+                  ></a>
+                  <a class="btn btn-primary btn-square m-1" href="#"
+                    ><i class="fab fa-facebook-f fw-normal"></i
+                  ></a>
+                  <a class="btn btn-primary btn-square m-1" href="#"
+                    ><i class="fab fa-linkedin-in fw-normal"></i
+                  ></a>
+                  <a class="btn btn-primary btn-square m-1" href="#"
+                    ><i class="fab fa-instagram fw-normal"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5"
+              >
+                <h4 class="mb-2">Dr. John Doe</h4>
+                <p class="text-primary mb-0">Implant Surgeon</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+              <div class="position-relative rounded-top" style="z-index: 1">
+                <img
+                  class="img-fluid rounded-top w-100"
+                  src="img/Yazan Pix/male-surgeon-tying-mask-operating-room.jpg"
+                  alt=""
+                />
+                <div
+                  class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex"
+                >
+                  <a class="btn btn-primary btn-square m-1" href="#"
+                    ><i class="fab fa-twitter fw-normal"></i
+                  ></a>
+                  <a class="btn btn-primary btn-square m-1" href="#"
+                    ><i class="fab fa-facebook-f fw-normal"></i
+                  ></a>
+                  <a class="btn btn-primary btn-square m-1" href="#"
+                    ><i class="fab fa-linkedin-in fw-normal"></i
+                  ></a>
+                  <a class="btn btn-primary btn-square m-1" href="#"
+                    ><i class="fab fa-instagram fw-normal"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5"
+              >
+                <h4 class="mb-2">Dr. John Doe</h4>
+                <p class="text-primary mb-0">Implant Surgeon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Newsletter Start -->
+    <div
+      class="container-fluid position-relative pt-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+      style="z-index: 1"
+    >
+      <div class="container">
+        <div class="bg-primary p-5">
+          <form class="mx-auto" style="max-width: 600px">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control border-white p-3"
+                placeholder="Your Email"
+              />
+              <button class="btn btn-dark px-4">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-light py-5 wow fadeInUp"
+      data-wow-delay="0.3s"
+      style="margin-top: -75px"
+    >
+      <div class="container pt-5">
+        <div class="row g-5 pt-4">
+          <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Quick Links</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Home</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                Services</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i> Work with
+                us</a
+              >
+              <a class="text-light" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Contact
+                Us</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Popular Links</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Home</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                Services</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Work with
+                us</a
+              >
+              <a class="text-light" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Contact
+                Us</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Get In Touch</h3>
+            <p class="mb-2">
+              <i class="bi bi-geo-alt text-primary me-2"></i>60m Street. As
+              Sulaimaniyah, Iraq
+            </p>
+            <p class="mb-2">
+              <i class="bi bi-envelope-open text-primary me-2"></i
+              >info@yazan.com
+            </p>
+            <p class="mb-0">
+              <i class="bi bi-telephone text-primary me-2"></i>+964 770 762 2076
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Follow Us</h3>
+            <div class="d-flex">
+              <a
+                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                href="#"
+                ><i class="fab fa-twitter fw-normal"></i
+              ></a>
+              <a
+                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                href="#"
+                ><i class="fab fa-facebook-f fw-normal"></i
+              ></a>
+              <a
+                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                href="#"
+                ><i class="fab fa-linkedin-in fw-normal"></i
+              ></a>
+              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"
+                ><i class="fab fa-instagram fw-normal"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-md-0">
+              &copy;
+              <a class="text-white border-bottom" href="#">Yazan</a>. All Rights
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
