@@ -166,56 +166,62 @@
     <div class="container">
       <div class="row">
         <div class="col-12 wow slideInUp" data-wow-delay="0.3s">
-          <form action="" class="formContactus">
+          <form action="" class="formContactus" method="post">
             <h3>Contact Form</h3>
             <div class="d-flex justify-content-between flex-lg-row flex-column">
               <div class="inputBox">
                 <label for="FullName">Full Name</label>
                 <input
                   type="text"
+                  name="contact-name"
                   id="FullName"
                   placeholder="Enter your full name"
                   class="form-control"
-                  name="fullName"
+required
                 />
               </div>
               <div class="inputBox">
                 <label for="EmailId">Email ID</label>
                 <input
                   type="text"
+                  name="contact-email"
                   id="EmailId"
                   placeholder="Enter your email ID"
                   class="form-control"
-                  name="fullName"
+                  required
                 />
               </div>
               <div class="inputBox">
                 <label for="Phone">Phone Number</label>
                 <input
                   type="text"
+                  name="contact-phone"
                   id="Phone"
                   placeholder="Enter your number"
                   class="form-control"
-                  name="fullName"
+                  required
                 />
               </div>
             </div>
             <div class="inputBox">
               <label for="Message">Message/Enquiry</label>
               <textarea
-                name="message"
+                      name="contact-message"
                 id="Message"
                 class="m-0"
                 placeholder="Enter your message"
+                      required
               ></textarea>
             </div>
             <div class="inputBox">
-              <button
+              <input
                 type="submit"
                 class="btn btn-primary w-100 btn-send-Message"
-              >
-                Send message
-              </button>
+                name="post"
+value="Send message"
+              />
+
+
             </div>
           </form>
         </div>
