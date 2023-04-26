@@ -131,3 +131,29 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+$(".owl-carousel__next").click(() => owl.trigger("next.owl.carousel"));
+$(".owl-carousel__prev").click(() => owl.trigger("prev.owl.carousel"));
+
+$(".owl_carouselTwo").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  animateOut: "slideOutDown",
+  animateIn: "flipInX",
+  navText: [
+    '<i class="bi bi-arrow-left"></i>',
+    '<i class="bi bi-arrow-right"></i>',
+  ],
+  smartSpeed: 450,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 5,
+    },
+  },
+});
