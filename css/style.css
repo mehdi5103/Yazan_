@@ -33,6 +33,9 @@ h6,
 .btn-secondary {
   color: var(--light);
 }
+card-text{
+  color:#000:
+}
 
 .btn-primary:hover {
   background: var(--secondary);
