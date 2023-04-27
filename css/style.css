@@ -927,3 +927,77 @@ card-text{
   content: '';
   background: linear-gradient(to right, var(--color1) var(--stop), var(--color2) 0);
 }
+
+.owl-carousel .owl-item img {
+  height: 88vh;
+  object-fit: cover;
+}
+
+.owl-carousel .owl-nav {
+  z-index: 200;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+  top: 46.5%;
+  color: #fff;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 20px;
+  z-index: 200000;
+  border-radius: 2px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+  top: 46.5%;
+  color: #fff;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 20px;
+  z-index: 200000;
+  border-radius: 2px;
+}
+.owl-carousel .owl-nav .owl-prev:hover {
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  z-index: 10000000;
+  right: 0px;
+  bottom: 150px;
+}
+.owl-carousel .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.owl-carousel .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.owl-carousel .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.38) !important;
+}
+.owl-carousel span {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+}
+.owl-carousel .owl-nav button:focus {
+  outline: none;
+}
