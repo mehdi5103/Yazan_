@@ -109,51 +109,57 @@
       '<i class="bi bi-arrow-right"></i>',
     ],
   });
+  $(".owl_carouselTwo").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    animateOut: "slideOutDown",
+    animateIn: "flipInX",
+    navText: [
+      "<div class='nav-btn prev-slide'></div>",
+      "<div class='nav-btn next-slide'></div>",
+    ],
+
+    smartSpeed: 450,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  });
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    navText: [
+      "<div class='nav-btn prev-slide'><i class='fa fa-angle-left' aria-hidden='true'></i></div>",
+      "<div class='nav-btn next-slide'><i class='fa fa-angle-right' aria-hidden='true'></i></div>",
+    ],
+    nav: true,
+    autoplayHoverPause: false,
+    lazyLoad: true,
+    dots: true,
+    autoplay: 500,
+    animateOut: "fadeOut",
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: false,
+      },
+      600: {
+        items: 1,
+        nav: false,
+        dots: false,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
 })(jQuery);
-
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: false,
-  autoplayHoverPause: false,
-  lazyLoad: true,
-  autoplay: 500,
-  animateOut: "fadeOut",
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 1,
-    },
-  },
-});
-$(".owl-carousel__next").click(() => owl.trigger("next.owl.carousel"));
-$(".owl-carousel__prev").click(() => owl.trigger("prev.owl.carousel"));
-
-$(".owl_carouselTwo").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  animateOut: "slideOutDown",
-  animateIn: "flipInX",
-  navText: [
-    '<i class="bi bi-arrow-left"></i>',
-    '<i class="bi bi-arrow-right"></i>',
-  ],
-  smartSpeed: 450,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 3,
-    },
-    1000: {
-      items: 5,
-    },
-  },
-});
