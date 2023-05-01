@@ -645,7 +645,7 @@ card-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 61%;
+  
   margin-left: 5px;
   margin: auto;
   text-align: center;
