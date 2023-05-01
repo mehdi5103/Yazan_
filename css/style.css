@@ -675,10 +675,15 @@ card-text{
 }
 
 .rowFeuat .card {
-  max-height: 427px;
+  max-height: 440px;
   min-height: 427px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all .8s ease-in;
 }
-
+.rowFeuat .card:hover{
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+transition: all .8s ease-in;
+}
 .rowFeuat .card img {
   max-height: 275px;
   min-height: 275px;
