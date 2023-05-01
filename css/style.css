@@ -1001,3 +1001,6 @@ card-text{
 .owl-carousel .owl-nav button:focus {
   outline: none;
 }
+.card-text {
+  color: #444141;
+}
