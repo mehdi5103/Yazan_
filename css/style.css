@@ -696,15 +696,16 @@ card-text{
   color: #fff;
   font-size: 30px;
   font-weight: 100;
+  text-align: center;
 }
 
 .box_Titles p {
   font-size: 14px;
   text-align: right;
-  width: 40%;
+  width: 80%;
   text-align: justify;
   margin-top: 10px;
-  margin-left: auto;
+  margin-left: 70px;
 }
 
 .box_record {
