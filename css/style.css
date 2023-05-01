@@ -642,6 +642,7 @@ card-text{
 .owl-carouselSection .item .paragraphBox {
   color: var(--light);
   margin-top: 100px;
+  width:80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
