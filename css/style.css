@@ -1010,5 +1010,5 @@ transition: all .8s ease-in;
 }
 .card-img, .card-img-bottom {
   border-bottom-right-radius: 30px !important; 
-  border-bottom-left-radius: 1px !important;
+  border-bottom-left-radius: 30px !important;
 }
