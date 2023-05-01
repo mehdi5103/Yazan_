@@ -373,7 +373,7 @@ card-text{
 }
 
 .wow p {
-  text-align: justify;
+ 
   line-height: 1.8;
 }
 
@@ -651,10 +651,6 @@ card-text{
   text-align: center;
 }
 
-.owl-carouselSection .item .paragraphBox p {
-  font-size: 18px;
-  line-height: 1.8;
-}
 
 .owl-carouselSection .Medevac_Patient {
   background-image: linear-gradient(
