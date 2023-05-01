@@ -1009,6 +1009,6 @@ transition: all .8s ease-in;
   color: #444141;
 }
 .card-img, .card-img-bottom {
-  border-bottom-right-radius: 30px !important; 
-  border-bottom-left-radius: 30px !important;
+  border-top-right-radius: 30px !important; 
+  border-top-left-radius: 30px !important;
 }
