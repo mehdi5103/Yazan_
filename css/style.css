@@ -1,0 +1,1030 @@
+:root {
+  --primary: #471aa0;
+  --secondary: #32a73d;
+  --light: #eef9ff;
+  --dark: #091e3e;
+}
+
+h1,
+h2,
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+  font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+
+.btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn-primary,
+.btn-secondary {
+  color: var(--light);
+}
+card-text{
+  color:#000;
+}
+
+.btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-square {
+  width: 36px;
+  height: 36px;
+}
+
+.btn-sm-square {
+  width: 28px;
+  height: 28px;
+}
+
+.btn-lg-square {
+  width: 46px;
+  height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+
+.top-shape::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 100%;
+  top: 0;
+  left: -17px;
+  background: var(--primary);
+  transform: skew(40deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Jost", sans-serif;
+  padding: 35px 15px;
+  font-size: 18px;
+  color: var(--dark);
+  outline: none;
+  transition: 0.5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+  padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link,
+  .sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+  .formContactus {
+    padding: 5px !important;
+  }
+  .formContactus h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .owl-carouselSection .item .paragraphBox {
+    width: 100% !important;
+  }
+
+  .box_Titles p {
+    width: 100% !important;
+  }
+
+  .box_Titles {
+    text-align: center !important;
+  }
+
+  .person_section,
+  .person_section-kl {
+    padding: 10px !important;
+  }
+
+  .person_section-kl {
+    margin-top: 30px;
+  }
+
+  .person_section h6 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box_record {
+    display: none;
+  }
+}
+
+.carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(9, 30, 62, 0.65);
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h5 {
+    font-size: 14px;
+    font-weight: 500 !important;
+  }
+
+  .carousel-caption h1 {
+    font-size: 30px;
+    font-weight: 600 !important;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (min-width: 991.98px) {
+  .banner {
+    position: relative;
+    margin-top: -90px;
+    z-index: 1;
+  }
+}
+
+.section-title h5::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 3px;
+  right: -55px;
+  bottom: 11px;
+  background: var(--primary);
+}
+
+.section-title h5::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 3px;
+  right: -75px;
+  bottom: 11px;
+  background: var(--secondary);
+}
+
+.twentytwenty-wrapper {
+  height: 100%;
+}
+
+.hero-header {
+  background: linear-gradient(rgba(9, 30, 62, 0.5), rgba(9, 30, 62, 0.5)),
+    url("../img/Yazan Pix/bradcam.png") center center no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.bg-appointment {
+  background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)),
+    url("../img/Yazan Pix/first-aid-kit-with-medical-supplies-light-background.jpg")
+      center center no-repeat;
+  background-size: cover;
+}
+
+.appointment-form {
+  background: rgb(71, 26, 160, 0.7);
+}
+
+.image-AboutUs img {
+  border-radius: 8px !important;
+}
+
+.service-item img,
+.service-item .bg-light,
+.service-item .bg-light h5,
+.team-item .team-text {
+  transition: 0.5s;
+}
+
+.service-item:hover img {
+  transform: scale(1.15);
+}
+
+.team-item .team-text::after,
+.service-item .bg-light::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  border-radius: 100px / 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.team-item:hover .team-text::after,
+.service-item:hover .bg-light::after {
+  opacity: 1;
+}
+
+.bg-offer {
+  background: url(../img/carousel-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.offer-text {
+  background: rgba(6, 163, 218, 0.85);
+}
+
+.price-carousel .owl-nav {
+  position: absolute;
+  width: calc(100% + 45px);
+  height: 45px;
+  top: calc(50% - 22.5px);
+  left: -22.5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.price-carousel:hover .owl-nav {
+  opacity: 1;
+}
+
+.price-carousel .owl-nav .owl-prev,
+.price-carousel .owl-nav .owl-next {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: var(--primary);
+  border-radius: 2px;
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.price-carousel .owl-nav .owl-prev:hover,
+.price-carousel .owl-nav .owl-next:hover {
+  background: var(--secondary);
+}
+
+.bg-testimonial {
+  background: url(../img/carousel-2.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.testimonial-carousel {
+  background: rgba(6, 163, 218, 0.85);
+}
+
+.testimonial-carousel .owl-nav {
+  position: absolute;
+  width: calc(100% + 46px);
+  height: 46px;
+  top: calc(50% - 23px);
+  left: -23px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: var(--primary);
+  border-radius: 2px;
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+  background: var(--secondary);
+}
+
+.testimonial-carousel .owl-item img {
+  width: 120px;
+  height: 120px;
+}
+
+.wow p {
+ 
+  line-height: 1.8;
+}
+
+.price-item .position-relative img {
+  max-height: 205px;
+}
+
+.paragraphyoob {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.boxDescriptionAndTitle {
+  background-color: #eef0fd;
+}
+
+.box-icon {
+  background-color: var(--primary);
+  padding: 15px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.titleBox p {
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+.cardDetails {
+  border: 3px solid rgba(206, 243, 255, 0.4);
+  border-radius: 10px;
+  padding: 70px 45px 63px 45px;
+  margin-bottom: 30px;
+  text-align: center;
+  max-height: 398px;
+}
+
+.cardDetails h3 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #222222;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.cardDetails i {
+  font-size: 50px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  vertical-align: middle;
+}
+
+.cardDetails .boxIcon {
+  background: var(--primary);
+  width: fit-content;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardDetails:hover .boxIcon {
+  background: var(--light);
+}
+.cardDetails:hover i {
+  color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.cardDetails .boxIcon:hover {
+  border: 1px solid var(--primary);
+}
+
+.ourMission {
+  background: url("../img/Yazan Pix/emergency_1.jpg") left top;
+  position: relative;
+  color: var(--light);
+}
+
+.ourVision {
+  background: url("../img/Yazan Pix/emergency_2.jpg") center;
+  position: relative;
+  color: var(--light);
+}
+.ourmilestone {
+  background: url("../img/Yazan Pix/first-aid-bag-for-the-medical-team-who-perform-fi-2022-09-29-14-15-01-utc.jpg")
+    center;
+  background-size: cover;
+  position: relative;
+  color: var(--light);
+}
+
+.ourMission h1,
+.ourMission p,
+.ourVision h1,
+.ourVision p,
+.ourmilestone h1,
+.ourmilestone p {
+  z-index: 2;
+  position: relative;
+  color: var(--light);
+  padding: 30px 15px;
+}
+.ourMission .overly {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(6, 163, 218, 0.8);
+}
+
+.ourVision .overly-Tow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 113, 253, 0.8);
+}
+
+.ourmilestone .overly-Three {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(6, 163, 218, 0.8);
+}
+
+.slideInUp iframe {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.slideInUp iframe:focus {
+  border: none;
+  outline: none;
+}
+
+.hero-header-contact {
+  background-image: url("../img//Yazan Pix/Rectangle\ 4.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 30px;
+}
+
+.formContactus {
+  background: #f1f1f1;
+  padding: 31px 27px;
+  border: 1px solid #bdbdbd;
+  border-radius: 21px;
+}
+
+.formContactus h3 {
+  color: var(--primary);
+  font-size: 24px;
+}
+
+.formContactus input {
+  height: 53px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+.inputBox label {
+  padding: 5px;
+}
+
+.inputBox {
+  flex: 1;
+  margin: 10px;
+}
+
+.formContactus textarea {
+  margin: 10px;
+  width: 100%;
+  max-width: 1220px;
+  height: 180px !important;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.formContactus textarea:focus {
+  border: 1px solid #bdbdbd;
+  outline: none;
+}
+
+.btn-send-Message {
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+
+
+.owl-carouselSection .item.services_for_Integrated {
+  background-image: linear-gradient(
+      135deg,
+      rgba(47, 137, 252, 0.9) 0%,
+      rgba(44, 188, 188, 0.9) 100%
+    ),
+    url("../img/Yazan Pix/bg_1.jpg");
+  background-position: center 20%;
+  background-size: cover;
+}
+
+.owl-carouselSection .item.services_Medical_Staffing {
+  background-image: linear-gradient(
+      135deg,
+      rgba(47, 137, 252, 0.9) 0%,
+      rgba(44, 188, 188, 0.9) 100%
+    ),
+    url("../img/Yazan Pix/cpr-training-with-dummy-2021-09-03-16-49-24-utc.JPG");
+  background-position: 100%;
+  background-size: cover;
+}
+
+.owl-carouselSection .Medical_Device_Equipment_Supply {
+  background-image: linear-gradient(
+      135deg,
+      rgba(47, 137, 252, 0.9) 0%,
+      rgba(44, 188, 188, 0.9) 100%
+    ),
+    url("../img/Yazan Pix/tablets.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.owl-carouselSection .Fitness_to_Work {
+  background-image: linear-gradient(
+      135deg,
+      rgba(47, 137, 252, 0.9) 0%,
+      rgba(44, 188, 188, 0.9) 100%
+    ),
+    url("../img/Yazan Pix/portrait-male-scientist-worker-medicine-factory-re-2022-11-16-06-05-52-utc (1).jpg");
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+.owl-carouselSection .Medevac {
+  background-image: linear-gradient(
+      135deg,
+      rgba(47, 137, 252, 0.9) 0%,
+      rgba(44, 188, 188, 0.9) 100%
+    ),
+    url("../img/Yazan Pix/doctor-prj.jpg");
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+.owl-carouselSection .item .pos {
+  font-size: 25px;
+  color: var(--light);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.owl-carouselSection .item .paragraphBox {
+  color: var(--light);
+  margin-top: 100px;
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  margin-left: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.owl-carouselSection .Medevac_Patient {
+  background-image: linear-gradient(
+      135deg,
+      rgba(47, 137, 252, 0.9) 0%,
+      rgba(44, 188, 188, 0.9) 100%
+    ),
+    url("../img/Yazan Pix/sigmund-x7-h2yuZVRs-unsplash.jpg");
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+.box-title {
+  padding-top: 95px;
+  padding-left: 62px;
+  padding-right: 63px;
+  padding-bottom: 95px;
+}
+
+.rowFeuat .card {
+  max-height: 100%;
+  min-height: 440px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all .8s ease-in;
+  border-radius: 30px;
+}
+.rowFeuat .card:hover{
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+transition: all .8s ease-in;
+}
+.rowFeuat .card img {
+  max-height: 275px;
+  min-height: 275px;
+  object-fit: cover;
+}
+
+.box_Titles {
+  background-color: var(--primary);
+  color: var(--light) !important;
+  text-align: right;
+  padding: 30px;
+}
+
+.box_Titles h5 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.box_Titles p {
+  font-size: 14px;
+  text-align: right;
+  width: 80%;
+  text-align: justify;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.box_record {
+  background-image: linear-gradient(
+      135deg,
+      rgba(108, 126, 148, 0.6) 0%,
+      rgba(91, 116, 116, 0.6) 100%
+    ),
+    url("../img/Yazan Pix/closeup-woman-getting-her-temperature-measured-with-infrared-thermometer-due-coronavirus-pandemic.jpg");
+  background-position: center 20%;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+.box_record {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.accident .section-title h1 {
+  font-size: 20px;
+}
+
+.accident .owl-item {
+  min-height: 391px;
+  max-height: 391px;
+}
+
+.accident .price-item h5 {
+  font-size: 16px;
+}
+
+.person_section {
+  background-image: linear-gradient(
+      135deg,
+      rgba(47, 137, 252, 0.8) 0%,
+      rgba(44, 188, 188, 0.8) 100%
+    ),
+    url("../img/Yazan Pix/portrait-male-scientist-worker-medicine-factory-re-2022-11-16-06-05-52-utc.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px;
+}
+
+.oneSection {
+  background-image: linear-gradient(
+    135deg,
+    rgba(47, 137, 252, 1) 0%,
+    rgba(44, 188, 188, 1) 100%
+  );
+}
+
+.oneSection .btn {
+  background-color: #fff;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  width: fit-content;
+  margin-top: 30px;
+}
+
+.person_section p {
+  color: #fff;
+  line-height: 2;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+.person_section h6 {
+  color: #fff;
+}
+
+.person_section-kl {
+  background-image: linear-gradient(
+    135deg,
+    rgba(47, 137, 252, 1) 0%,
+    rgba(44, 188, 188, 1) 100%
+  );
+}
+
+.person_section-kl {
+  padding: 100px;
+}
+
+.person_section-kl p {
+  color: #fff;
+  line-height: 2;
+}
+
+.person_section-kl h5 {
+  color: #fff;
+}
+
+#index .owl-carousel a {
+  background-color: var(--primary);
+  border: none !important;
+  color: #fff !important;
+}
+
+#index .owl-carousel a:hover {
+  color: var(--secondary);
+}
+
+.nabbb {
+  background-color: var(--primary);
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.servicesss {
+  background-color: var(--primary);
+}
+
+.list-yy {
+  text-align: left;
+  gap: 20px;
+}
+
+.sectionMMM h1 {
+  color: #fff;
+}
+
+.sectionMMM p {
+  color: #fff;
+  line-height: 40px;
+}
+.Approach ol {
+  list-style: none;
+  counter-reset: list;
+  padding: 0 1rem;
+}
+
+.Approach li {
+  position: relative;
+  counter-increment: list;
+  max-width: 45rem;
+  margin: 2rem auto;
+  padding: 2rem 1rem 1rem;
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: white;
+}
+.Approach li:hover{
+  box-shadow: -0.1rem -0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+  transition:all 0.5s ease-in;
+}
+.Approach li::before {
+  --stop: calc(100% / var(--length) * var(--i));
+  --l: 62%;
+  --l2: 88%;
+  --c1: hsl(var(--h), 71%, var(--l));
+  --c2: hsl(var(--h), 71%, var(--l2));
+
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+.Approach h3 {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0 1rem;
+  color: var(--brandColor);
+}
+
+.Approach h3::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  content: counter(list);
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--brandColor);
+  color: white;
+}
+
+@media (min-width: 40em) {
+  .Approach li {
+    margin: 3rem auto;
+    padding: 3rem 2rem 2rem;
+  }
+
+  .Approach h3 {
+    font-size: 2.25rem;
+    margin: 0 0 2rem;
+  }
+
+  .Approach h3::before {
+    margin-right: 1.5rem;
+  }
+}
+.Approach li::before {
+  --stop: calc(100% / var(--length) * var(--i));
+  --color1: #5c26c6;
+  --color2: #7e47ea;
+
+  content: '';
+  background: linear-gradient(to right, var(--color1) var(--stop), var(--color2) 0);
+}
+
+.owl-carousel .owl-item img {
+  height: 88vh;
+  object-fit: cover;
+}
+
+.owl-carousel .owl-nav {
+  z-index: 200;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+  top: 46.5%;
+  color: #fff;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 20px;
+  z-index: 200000;
+  border-radius: 2px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+  top: 46.5%;
+  color: #fff;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 20px;
+  z-index: 200000;
+  border-radius: 2px;
+}
+.owl-carousel .owl-nav .owl-prev:hover {
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  z-index: 10000000;
+  right: 0px;
+  bottom: 20px;
+}
+.owl-carousel .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.owl-carousel .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.owl-carousel .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.38) !important;
+}
+.owl-carousel span {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+}
+.owl-carousel .owl-nav button:focus {
+  outline: none;
+}
+.card-text {
+  color: #444141;
+}
+.card-img, .card-img-bottom {
+  border-top-right-radius: 30px !important; 
+  border-top-left-radius: 30px !important;
+}
+.box-part{
+  background:#FFF;
+
+  padding:60px 10px;
+  margin:30px 0px;
+  border: 1px solid;
+  border-radius: 25px;
+
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+height: 260px;
+}
+.box-part:hover{
+  box-shadow: -0.1rem -0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in;
+}
+.box-part h3{
+  margin-bottom: 25px;
+}

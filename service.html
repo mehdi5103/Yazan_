@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Yazan</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary m-1" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark m-1" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary m-1" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+      <div class="row gx-0">
+        <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+
+        </div>
+        <div class="col-md-6 text-center text-lg-end">
+          <div
+            class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5"
+          >
+            <div class="me-3 pe-3 border-end py-2">
+              <p class="m-0">
+                <i class="fa fa-envelope-open me-2"></i>info@yazan.com
+              </p>
+            </div>
+            <div class="py-2">
+              <p class="m-0">
+                <i class="fa fa-phone-alt me-2"></i>+964 770 762 2076
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0"
+    >
+      <a href="index.html" class="navbar-brand p-0">
+                <img class="m-4" src="img/Yazan-Logo.png" alt="" height="60" width="">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="service.html" class="nav-item nav-link active">Service</a>
+          <a href="workWithUs.html" class="nav-item nav-link">Work with Us</a>
+        </div>
+        <a href="Contact.html" class="btn btn-primary py-2 px-4 ms-3"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(9, 30, 62, 0.7)">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn bg-white btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <div class="input-group" style="max-width: 600px">
+              <input
+                type="text"
+                class="form-control bg-transparent border-primary p-3"
+                placeholder="Type search keyword"
+              />
+              <button class="btn btn-primary px-4">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-12 text-center wow zoomIn servicesss p-3"
+          data-wow-delay="0.3s"
+        >
+          <h1 class="display-3 text-white animated zoomIn">Service From Yazan</h1>
+          <a href="" class="h4 text-white">Home</a>
+          <i class="far fa-circle text-white px-2"></i>
+          <a href="" class="h4 text-white">Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="owl-carouselSection owl-theme mt-5">
+      <div class="item services_for_Integrated pb-5 pt-5">
+        <div class="overlay-services_for"></div>
+        <div class="paragraphBox wow zoomIn" data-wow-delay="0.3s">
+          <h1  class="pos mt-5"
+            >Services for Integrated Remote Healthcare & On-Site Clinics</h1
+          >
+          <p class="mt-4 w-lg-25 w-100">
+            Remote workers are the focus of health initiatives involving
+            prevention, diagnosis, and treatment. When it comes to hiring for
+            the remote worksite, we only take into consideration qualified
+            medical professionals with a strong commitment to patient-centered
+            care and a focus on emergency response.
+          </p>
+          <div class="container wow fadeInUp mb-5 mt-5" data-wow-delay="0.4s">
+            <div class="row gy-4 rowFeuat mt-2">
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                  <img
+                          class="card-img"
+                          src="./img/Yazan Pix/portrait-doctor-paramedic-standing-with-arms-crossed.jpg"
+                          alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">A 24-hour on-site physician</h5>
+                    <p class="card-text">
+                      During the vital first few minutes following injury, a licensed
+                      doctor is on-site to manage emergency
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                  <img
+                          class="card-img"
+                          src="./img/Yazan Pix/doctor-prj.jpg"
+                          alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Follow-up for Chronic Disease</h5>
+                    <p class="card-text">
+                      Employees with pre-existing ailments can receive follow-up care
+                      from our on-site and offsite doctors and specialist
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                  <img
+                          class="card-img"
+                          src="./img/Yazan Pix/first-aid-bag-for-the-medical-team-who-perform-fi-2022-09-29-14-15-01-utc.jpg"
+                          alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Paramedic</h5>
+                    <p class="card-text">
+                      On demand, experienced personnel with first aid certification
+                      are ready to manage disaster scenarios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row rowFeuat gy-4 mt-2">
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                  <img
+                          class="card-img"
+                          src="./img/Yazan Pix/first-aid-kit-with-medical-supplies-light-background.jpg"
+                          alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Supply and Medicines</h5>
+                    <p class="card-text">
+                      Life-saving supplies and equipment, as well as therapies for
+                      both acute and chronic ailments, are provided
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                  <img
+                          class="card-img"
+                          src="./img/Yazan Pix/Coid19.jpg"
+                          alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">COVID-19 Monitoring</h5>
+                    <p class="card-text">
+                      uidelines for infection prevention will be adhered to by our
+                      on-site doctor. Whereas PCR tests can be
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                  <img
+                          class="card-img"
+                          src="./img/Yazan Pix/ambulance-cars-row-parking.jpg"
+                          alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">24/7 Ambulance</h5>
+                    <p class="card-text">
+                      Ambulances that are fully outfitted, licensed, and have a
+                      professional ambulance driver on-site at all times.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+            When properly implemented, an integrated health management system
+            enables a business to maximize health and wellbeing at its locations
+            and to plan the ideal combination of personnel, tools, and other
+            resources to accomplish the intended health and business goals.
+            Yazan's other healthcare services and solutions can be delivered
+            through an on-site clinic as well.
+          </p>
+          <ul class="list-unstyled list-yy">
+            <li class="my-2">Clinic set-up and supply</li>
+            <li class="my-2">Fitness to work assessments.</li>
+            <li class="my-2">Medical Waste management</li>
+            <li class="my-2">Routine site hygiene inspection</li>
+            <li class="my-2">First Aid training for on-site personnel</li>
+          </ul>
+        </div>
+      </div>
+      <section class="bg-primary mt-5 wow zoomIn py-4 d-flex justify-content-center" data-wow-delay="0.3s">
+        <div class="paragraphBox "  style="width: 80%">
+          <div class="row">
+            <div class="col-12 sectionMMM">
+              <h1 class="text-center">Medical Emergency Response Plan (MERP)</h1>
+              <p>
+                Each facility should create a site-specific Medical Emergency
+                Response Plan to handle medical crises (MERP). In addition to
+                detailing the reaction to various medical emergency scenarios
+                based on the health risk and local medical resource evaluations,
+                this should consider the possibility of both single and many
+                casualties and account for the availability of sufficient
+                resources. The MERP should consider any engagement with local
+                health authorities, as well as any unique needs connected to the
+                work activities and the general medical competence available in
+                the nation/location in which these activities are carried out.
+                The capability of the staff, the accessibility of medical
+                supplies, and the adaptability of the plan to handle both major
+                and minor situations all contribute to the success of the
+                Medical Emergency Response (MER) system. To guarantee its
+                effectiveness, frequent drills on various scenarios are
+                necessary. Once the MERP has been created, it should be used
+                frequently and involve testing of the necessary logistical
+                support (such as communications and transport).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Tranining mt-5">
+        <div class="item services_Medical_Staffing pb-5 pt-5">
+          <div class="paragraphBox">
+            <h1 class="pos mt-5">Training & Medical Staffing</h1>
+            <p class="mt-4 w-lg-25 w-100">
+              When needed, Yazan offers its clients access to doctors, nurses,
+              ambulance drivers, and other medical personnel. The employees are
+              fully qualified in their respective disciplines. For doctors,
+              medical residents, medical students, and other healthcare
+              professionals, Yazan offers a variety of certificate programs. For
+              accident prevention to be successful, safety and health training
+              is essential.
+            </p>
+            <p class="p-3">
+              There are noticeably more accidents and illnesses in businesses
+              that don't offer recruit training, supervisory training, or worker
+              safety and health training than in those that do.
+            </p>
+            <h3 class="text-white mt-5">
+              We offer instruction, trainings, and direction in the following
+              areas:
+            </h3>
+            <ul class="text-start">
+              <li class="mt-2">Employee and supervisory responsibilities</li>
+              <li class="mt-2">Hazard communication training</li>
+              <li class="mt-2">Emergency and evacuation procedures</li>
+              <li class="mt-2">
+                Location of first aid stations, fire extinguishers, and
+                emergency telephone numbers
+              </li>
+              <li class="mt-2">Site-specific hazards</li>
+              <li class="mt-2">Procedures for reporting injuries</li>
+              <li class="mt-2">Use of personal protective equipment (PPE)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary mt-5 wow zoomIn py-4 d-flex justify-content-center" data-wow-delay="0.3s">
+        <div class="paragraphBox" style="width: 80%">
+          <div class="row">
+            <div class="col-12 sectionMMM">
+              <h1 class="text-center">Life Support Training</h1>
+              <p>
+                Delivered by knowledgeable instructors who have earned
+                certification from foreign bodies. We provide a variety of
+                medical training programs that are appropriate for both novice
+                and seasoned professionals.
+              </p>
+              <ul class="list-unstyled text-white">
+                <li class="mt-2">BLS (Basic Life Support)</li>
+                <li class="mt-2">ATLS (Advanced Trauma Life Support)</li>
+                <li class="mt-2">First Aid Trainings</li>
+                <li class="mt-2">CPR + AED</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Medical mt-5 wow slideInLeft" data-wow-delay="0.3s">
+        <div class="item Medical_Device_Equipment_Supply pb-5 pt-5">
+          <div class="paragraphBox">
+            <h1 class="pos mt-5">Medical Device & Equipment Supply</h1>
+            <p class="mt-4 w-lg-25 w-100">
+              Medical supplies and equipment are a significant asset in the
+              delivery of healthcare and must be managed effectively. Orders for
+              POM drugs and OTC goods can be processed by Yazan. Also, we
+              provide and keep up a variety of medical tools, first aid kits,
+              and on-site medical investigation kits.
+            </p>
+            <p>
+              The resources you need to succeed You can develop a motivated
+              staff that is extremely productive by offering a safe and healthy
+              work environment.
+            </p>
+            <div class="d-flex justify-content-center">
+
+            <ul class="text-start list-unstyled">
+              <li class="mt-2">Medical Equipment</li>
+              <li class="mt-2">Medications</li>
+              <li class="mt-2">First Aid Kits</li>
+              <li class="mt-2">On-site medical investigation devices</li>
+            </ul>
+            <h3 class="text-white text-start" style="margin: 55px"></h3>
+              <br>
+            <ul class="text-start list-unstyled ml-4">
+              <li class="mt-2">Our suppliers</li>
+              <li class="mt-2">Omron</li>
+              <li class="mt-2">Pioneer</li>
+              <li class="mt-2">Medtronic</li>
+            </ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Fitness mt-5 wow slideInRight" data-wow-delay="0.3s">
+        <div class="item Fitness_to_Work pb-5 pt-5">
+          <div class="paragraphBox">
+            <h1 class="pos mt-5">Fitness to Work Assessments</h1>
+            <p class="mt-4 w-lg-25 w-100">
+              The goal of the pre-employment medical examination is to place and
+              keep people in work environments that are compatible with their
+              physical and mental capabilities.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="Patient mt-5 wow slideInLeft" data-wow-delay="0.3s" >
+        <div class="item Medevac pb-5 pt-5">
+          <div class="paragraphBox">
+            <h1 class="pos mt-5"
+              >Medevac, Patient Transport and Evacuations</h1
+            >
+            <p class="mt-4 w-lg-25 w-100">
+              We guarantee that you will obtain the most cost-effective
+              evacuation options without sacrificing quality thanks to our years
+              of expertise, competence, and knowledge in medevac and mass
+              evacuations. Yazan is an expert in the medical, logistical, and
+              regulatory procedures required to relocate patients in a secure,
+              effective, and economical way.
+            </p>
+            <p>
+              Yazan provide evacuation services to both businesses and people
+              (private evacuation instances). We assist our clients in
+              navigating the world's most challenging extraction sites by
+              engaging the services of skilled aviation and medical staff that
+              guarantee the highest standard of patient care. We have access to
+              a fleet of air ambulances and a global network of verified
+              regional partners. Each aircraft is piloted by a flight crew with
+              extensive expertise and certification who have received training
+              in patient handling and critical care transfers. Some of our
+              evacuation solutions are:
+            </p>
+            <ul class="list-unstyled text-start">
+              <li class="mt-2">
+                Air ambulance, including Portable Medical Isolation Unit, where
+                required.
+
+              <li class="mt-2">Commercial aircraft with stretcher onboard</li>
+              <li class="mt-2">
+                Medical escort (doctor or nurse) accompanying patients on
+                commercial aircraft.Medical escort (doctor or nurse)
+                accompanying patients on commercial aircraft.
+              <li class="mt-2">
+              <li class="mt-2">Charter flights</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="Medevac mt-5 wow slideInRight" data-wow-delay="0.3s">
+        <div class="item Medevac_Patient mb-5 pb-5 pt-5">
+          <div class="paragraphBox">
+            <h1 class="pos mt-5">Food and Water Safety</h1>
+            <p class="mt-4 w-lg-25 w-100">
+              Food and water-borne diseases are frequently severe and have the
+              power to halt operations. Inadequate food and water safety
+              planning also carries a significant danger to a company's
+              reputation. Food and water safety might pose special difficulties
+              in field operations in exceedingly remote areas. We can
+              considerably reduce the risk of sickness and mortality for
+              employees from microbiological, chemical, and physical pollution
+              of the food and water supply by implementing environmental
+              monitoring systems and water quality control.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+      
+      <div class="item Medevac_Patient pb-5">
+        <div class="overlay-services_for"></div>
+        <div class="col-12 text-center">
+          <h1 class="display-3 text-white animated zoomIn">Service</h1>
+          <a href="" class="h4 text-white">Home</a>
+          <i class="far fa-circle text-white px-2"></i>
+          <a href="" class="h4 text-white">Service</a>
+        </div>
+        <div class="paragraphBox">
+          <a href="#" class="pos mt-5">Food and Water Safety</a>
+          <p class="mt-4 w-lg-25 w-100">
+            Food- and water-borne diseases are frequently severe and have the
+            power to halt operations. Inadequate food and water safety planning
+            also carries a significant danger to a company's reputation. Food
+            and water safety might pose special difficulties in field operations
+            in exceedingly remote areas.
+          </p>
+        </div>
+      </div> -->
+    </div>
+    <!-- Hero End -->
+
+    <!-- main Section -->
+
+
+
+
+
+
+    <!-- Start section End -->
+    <div class="container-fluid wow zoomIn" data-wow-delay="0.2s">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12 person_section">
+          <p>
+            Yazan provide evacuation services to both businesses and people
+            (private evacuation instances). We assist our clients in navigating
+            the world's most challenging extraction sites by engaging the
+            services of skilled aviation and medical staff that guarantee the
+            highest standard of patient care. We have access to a fleet of air
+            ambulances and a global network of verified regional partners. Each
+            aircraft is piloted by a flight crew with extensive expertise and
+            certification who have received training in patient handling and
+            critical care transfers. Some of our evacuation solutions are:
+          </p>
+          <h6>
+            <i class="fa fa-check-circle text-white me-3"></i>Air ambulance,
+            including Portable Medical Isolation Unit, where required.
+          </h6>
+          <h6>
+            <i class="fa fa-check-circle text-white me-3"></i>Commercial
+            aircraft with stretcher onboard
+          </h6>
+          <h6>
+            <i class="fa fa-check-circle text-white me-3"></i>Air ambulance,
+            including Portable Medical Isolation Unit, where required.
+          </h6>
+          <h6>
+            <i class="fa fa-check-circle text-white me-3"></i>
+            Charter flights
+          </h6>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 person_section-kl">
+          <p>
+            Our team of qualified specialists will help to assess the medical
+            condition or incident and coordinate the full evacuation procedure
+            from bed to bed, from ground to air to sea, when you phone our 24/7
+            Help Centers to request medevac or mass evacuation support.
+          </p>
+          <h5>Our Primary local Hospital and Medical Partners:</h5>
+          <ul class="p-3 list-unstyled text-white">
+            <li class="mt-3">FMC</li>
+            <li class="mt-3">High Q Hospital</li>
+            <li class="mt-3">Rawa Medical Building</li>
+            <li class="mt-3">Aros Medical Building</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End section End -->
+
+    <!-- Life Support Training -->
+    <div class="container-fluid wow zoomIn mt-5 pt-5" data-wow-delay="0.2s">
+      <div class="row">
+        <div class="col-lg-5 col-md-6 col-12 box_Titles">
+          <h5>Life Support Training</h5>
+          <p>
+            Delivered by knowledgeable instructors who have earned certification
+            from foreign bodies. We provide a variety of medical training
+            programs that are appropriate for both novice and seasoned
+            professionals.
+          </p>
+        </div>
+        <div class="col-lg-7 col-md-6 col-12 box_record">
+          <ul
+            class="list-unstyled text-white d-flex justify-content-center align-items-center h-100"
+          >
+            <li class="mx-3">BLS (Basic Life Support)</li>
+            <li class="mx-3">ATLS (Advanced Trauma Life Support)</li>
+            <li class="mx-3">First Aid Training</li>
+            <li class="mx-3">CPR + AED</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Life Support Training -->
+
+
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-light py-5 wow fadeInUp"
+      data-wow-delay="0.3s"
+      style="margin-top: -75px"
+    >
+      <div class="container pt-5">
+        <div class="row g-5 pt-4">
+          <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Quick Links</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Home</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                Services</a
+              >
+              <a class="text-light mb-2" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i> Work with
+                us</a
+              >
+              <a class="text-light" href="#"
+                ><i class="bi bi-arrow-right text-primary me-2"></i>Contact
+                Us</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Get In Touch</h3>
+            <p class="mb-2">
+              <i class="bi bi-geo-alt text-primary me-2"></i> Iraq
+            </p>
+            <p class="mb-2">
+              <i class="bi bi-envelope-open text-primary me-2"></i
+              >info@yazan.com
+            </p>
+            <p class="mb-0">
+              <i class="bi bi-telephone text-primary me-2"></i>+964 770 762 2076
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-md-0">
+              &copy;
+              <a class="text-white border-bottom" href="#">Yazan Group</a> All Rights
+              Reserved 2023.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
