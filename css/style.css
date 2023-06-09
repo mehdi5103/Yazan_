@@ -1028,3 +1028,158 @@ height: 260px;
 .box-part h3{
   margin-bottom: 25px;
 }
+
+.box {
+  background-color:var(--primary) !important;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+#approach {
+  background-image: url("../img/Yazan Pix/its-new-normal-cropped-shot-handsome-mature-businessman-wearing-mask-having-his-temperature-taken-while-standing-head-queue-his-office.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  color: #fff;
+}
+
+#approach .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+#approach .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#approach .approach-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#approach .approach-text p {
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.mission  {
+  background-image: url("../img/Yazan Pix/247-service-icon-support-holding-hand.jpg");
+  background-size: cover;
+  padding: 40px;
+  position: relative;
+  margin-top: 20px;
+
+}
+.mission .overley-si{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(6, 163, 218, 0.8);
+  margin: -40px;
+  margin-top: -40px;
+}
+.mission .section-title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  position: inherit;
+}
+
+.mission .card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.mission .card:hover {
+  transform: translateY(-5px);
+}
+
+.mission .card-body {
+  padding: 20px;
+}
+
+.mission .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.mission .card-text {
+  color: #666666;
+}
+
+.mission .text-center {
+  color: #fff;
+  font-weight: bold;
+  position: inherit;
+}
+
+@media (max-width: 767px) {
+  .mission .card {
+    margin-bottom: 20px;
+  }
+}
+
+.vision .card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.vision .card:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.vision .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.vision .card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.vision .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
